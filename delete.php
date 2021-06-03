@@ -6,5 +6,5 @@ mysqli_query($conn,"DELETE FROM produit  WHERE réference =$id");
 
 ?>
 <script type="text/javascript">
-window.location="categorie.php";
+window.location="index.php";
 </script>

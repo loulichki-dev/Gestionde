@@ -1,7 +1,7 @@
 <!-- --------------Update------------ -->
 
 <?php
-$conn = mysqli_connect("localhost","root","","souqstock");
+$conn = mysqli_connect("localhost","root","","tangermarket");
 
 $id =$_GET['id'];
 

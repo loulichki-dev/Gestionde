@@ -4,7 +4,7 @@ if(isset($_POST['username']) && isset($_POST['password']))
 {
     $db_username = 'root';
     $db_password = '';
-    $db_name     = 'souqstock';
+    $db_name     = 'tangermarket';
     $db_host     = 'localhost';
     $conn = mysqli_connect($db_host, $db_username, $db_password,$db_name)
 
@@ -26,14 +26,14 @@ if(isset($_POST['username']) && isset($_POST['password']))
            $_SESSION['username'] = $username;
            echo "<script>
 alert('Welcome $username ');
-window.location.href='http://localhost/SouqStock/index.php';
+window.location.href='http://localhost/tangermarket/index.php';
 </script>";
         }
         else
         {
             echo "<script>
             alert('INPUT IS INCORRECT');
-            window.location.href='http://localhost/SouqStock/login.php';
+            window.location.href='http://localhost/tangermarket/login.php';
             </script>";
         }
     }
@@ -41,7 +41,7 @@ window.location.href='http://localhost/SouqStock/index.php';
     {
         echo "<script>
 alert('INPUT IS EMPTY');
-window.location.href='http://localhost/SouqStock/login.php';
+window.location.href='http://localhost/tangermarket/login.php';
 </script>";
 
 

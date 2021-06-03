@@ -1,6 +1,6 @@
 
 <?php
-$conn = mysqli_connect("localhost","root","","souqstock");
+$conn = mysqli_connect("localhost","root","","tangermarket");
 if(isset($_POST['submit'])) {
     $libelle = $_POST['libelle'];
     $quantite_minimale = $_POST['quantite_minimale'];
@@ -35,8 +35,8 @@ if(isset($_POST['filter'])){
     <ul class="nav navbar-nav " style="display: flex; flex-direction:row; padding:10px;">
       <li class="active mr-3 btn btn-success  "><a class="text-light" href="#">Acceuill</a></li>
 
-      <!-- <li class="active"><a href="/SouqStock/ajouter.php">Ajouter</a></li> -->
-      <li class="btn btn-danger text-light"><a class="text-light" href="/SouqStock/login.php">Déconnecter</a></li>
+      <!-- <li class="active"><a href="/tangermarket/ajouter.php">Ajouter</a></li> -->
+      <li class="btn btn-danger text-light"><a class="text-light" href="/tangermarket/login.php">Déconnecter</a></li>
 
     </ul>
   </div>
@@ -99,7 +99,7 @@ if(isset($_POST['filter'])){
                 </thead>
                 <?php
 
-$conn = mysqli_connect("localhost","root","","souqstock");
+$conn = mysqli_connect("localhost","root","","tangermarket");
               
               $sql = "SELECT * FROM produit";
               $result = $conn-> query($sql);
